@@ -1,0 +1,23 @@
+.chat_fa_btn{
+  position: fixed;
+  right: 20px;
+  bottom: 80px;
+  .btn__inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: var(--color1);
+    border-radius: 50%;
+    box-shadow: 0 2px 6px #0004;
+    font-size: 18px;
+    color: var(--triadic1);
+    cursor: pointer;
+    transition: color 300ms linear, background 300ms linear; 
+  }
+  .btn__inner:hover{
+    background: var(--primary);
+    color: var(--secondary);
+  }
+}

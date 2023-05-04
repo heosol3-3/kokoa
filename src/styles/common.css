@@ -1,0 +1,27 @@
+/* common.css */
+@import url(reset.css);
+@import url(tab.scss);
+@import url(header.scss);
+
+body{font-size: 12px; min-width: 390px;}
+#root{width: 100%;min-height: 100%;}
+main{height: 100%;padding-top: 64px;box-sizing: border-box;}
+a:link, a:visited{color: #000;text-decoration: none;}
+a:hover, a:focus, a:active{color: #000;text-decoration: none;}
+img{position: relative;top: 50%;left: 50%;transform: translate(-50%, -50%);max-width: 100%;}
+
+.empty{display: block;width: 40px;height: 40px;margin: 10px 15px;border-radius: 50%;background: url(../images/empty.jpg) no-repeat 0 0;background-size: cover;}
+
+/* color */
+:root{
+  --primary: #4a00d3;
+  --secondary: #ffbe1a;
+  --color1: #E8EAF6;
+  --active :#ad01fc;
+  --triadic1: #7410aa;
+  --triadic2: #fc2f01;
+  --right: #f0f0f0;
+  --deactive: #f2f5f8;
+  --confirm: #00C853;
+  --cancel: #DD2C00;
+}

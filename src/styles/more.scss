@@ -1,0 +1,191 @@
+/* more.css */
+@import url(common.css);
+
+body{
+  .tab_bar>ul>li:nth-child(4)>a{color: #513736;}
+  main.more{
+    background: #fff;
+    .user_info{
+      display: flex;
+      align-items: center;
+      height: 72px;
+      padding: 10px 0;
+      border-bottom: 1px solid #ebebeb;
+      .profile_img{
+        width: 50px;
+        height: 50px;
+      }
+      .profile_info{
+        flex: 1;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .profile_name{
+          font-size: 16px;
+        }
+        .profile_email{
+          color: #8e9399;
+        }
+      }
+      .chat_img svg{
+        font-size: 30px;
+        margin-right: 15px;
+        color: var(--triadic1);
+      }
+    }
+    .user_menu{
+      height: 125px;
+      ul{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        li{
+          overflow: hidden;
+          flex: 1;
+          a{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: var(--color1);
+            font-weight: bold;
+            i{
+              font-size: 30px;
+              margin-bottom: 10px;
+              cursor: pointer;
+              transition: all 300ms linear;
+              &:hover{
+                color: var(--triadic1);
+                transform: scale(1.05);
+              }
+            }
+          }
+        }
+      }
+    }
+    .plus_friends{
+      display: flex;
+      flex-direction: column;
+      border-bottom: 1px solid #ebebeb;
+      header{
+        height: auto;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: first baseline;
+        font-size: 16px;
+        padding: 5px 15px;
+        border-bottom: 1px solid #ebebeb;
+        box-sizing: border-box;
+        span{
+          font-size: 12px;
+          color: #8e9399;
+
+        }
+      }
+      .plus_list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background: var(--deactive);
+        li{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 50%;
+          box-sizing: border-box;
+          a{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            width: 100%;
+            min-width: 90px;
+            padding: 8px 0;
+            background: #fff;
+            border-radius: 2px;
+            font-size: 12px;
+            color: #333;
+            transition: background .3s linear;
+            &:hover{
+              color: #fff;
+              background: var(--triadic1);
+            }
+            svg{
+              width: 30px;
+              margin: 0 15px 4px;
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+    .more_app{
+      height: 190px;
+      padding: 30px 16px;
+      border-radius: 8px 8px 0 0;
+      background: #fff;
+      box-sizing: border-box;
+      ul{
+        display: flex;
+        width: 100%;
+        li{
+          max-width: 75px;
+          max-height: 160px;
+          padding: 16px;
+          border-radius: 4px;
+          transition: max-width .5s ease-in-out;
+          box-sizing: border-box;
+          &:hover{
+            max-width: 60%;
+            background: var(--color1);
+            a{
+              align-items: start;
+              .app__catch{
+                opacity: 1;
+                display: inline-flex;
+                width: auto;
+                height: 100%;
+                padding: 0 20px 0 8px;
+                p{
+                  opacity: 1;
+                }
+              }
+            }
+          }
+          a{
+            display: flex;
+            align-items: normal;
+            height: 100%;
+            text-align: center;
+            div:first-of-type{
+              width: 75px;
+              height: 100%;
+              span{
+                display: flex;
+                width: 44px;
+                height: 44px;
+                margin: 0 auto 10px;
+                background: url(../images/empty.jpg) no-repeat 0 0;
+                background-size: cover;
+              }
+            }
+            .app__catch{
+              opacity: 0;
+              width: 0;
+              height: 0;
+              box-sizing: border-box;
+              p{
+                opacity: 0;
+                width: 200px;
+                text-align: left;
+                transition: opacity .3s linear .5s;
+              }
+            }
+          }
+        }
+        li:nth-child(1) span{background-image: url(../images/kakaostory.png) !important;}
+        li:nth-child(2) span{background-image: url(../images/path.png) !important;}
+        li:nth-child(3) span{background-image: url(../images/kakaofriends.png) !important;}
+      }
+    }
+  }
+}

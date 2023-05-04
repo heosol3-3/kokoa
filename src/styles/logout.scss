@@ -1,0 +1,21 @@
+.btn_wrap{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 40px;
+  .btn_logout{
+    padding: 0 40px;   
+    border: none;
+    border-radius: 2px;
+    background: var(--color1);
+    font-weight: bold;
+    color: var(--primary);
+    line-height: 3;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    &:hover{
+      background: var(--primary);
+      color: var(--secondary);
+    }
+  }
+}
