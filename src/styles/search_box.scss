@@ -45,7 +45,7 @@
       &::placeholder{text-align: center;}
       &:focus{
         outline: none;
-        border: 2px solid var(--primary);
+        border: 2px solid rgba(38,34,43,.7);
       }
     }
 

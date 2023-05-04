@@ -1,13 +1,13 @@
 @import url(common.css);
 
 main{
-  background: var(--deactive);
+  background: rgba(38,34,43,.7);
   section{
     &.section__user{
       border-radius: 0 0 8px 8px;
       background: #fff;
       box-sizing: border-box;
-      box-shadow: 0px -1px 4px rgba(11, 11, 11, .3);
+      box-shadow: 0px -1px 4px rgba(38,34,43,.7);
       ul{
         li{
           a{
