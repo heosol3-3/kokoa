@@ -14,11 +14,11 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        color: var(--triadic1);
+        color: #333;
         transition: transform 300ms linear;
         &:hover{
           transform: scale(1.1);
-          color: var(--secondary);
+          color: #333
         }
         i{
           font-size: 22px;

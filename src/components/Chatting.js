@@ -16,7 +16,7 @@ function Chatting({name, message, profileURL, photoURL, comment}) {
   message = useCallback(messageCut(message, 40),[message]);
   
   // 프로필 변경
-  if (profileURL != undefined)
+  if (profileURL !== undefined)
   var proflieImg = {
     backgroundImage : `url(${profileURL})`,
     backgroundPosition : `50% 50%`
